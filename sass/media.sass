@@ -2,23 +2,242 @@
 
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (max-width : 1399px)
+	.item-block
+		padding-left: 40px
+		padding-right: 40px
+
+	.index-content-left
+		width: 30%
+	.index-content-center
+		width: 40%
+	.index-content-right
+		width: 30%
+	.p-reviews__title
+		height: 56px
+		padding: 0
+		margin-bottom: 15px
+		overflow: hidden
+	.p-reviews__description
+		height: 132px
+		overflow: hidden
+		padding-bottom: 0
+		margin-bottom: 24px
+	.f-services
+		padding-right: 30px
+	.f-services:last-child
+		padding-right: 28px
+	.logo
+		width: 20%
+	.header__info
+		font-size: 14px
+		width: 17%
+	.social
+		width: 9%
+	.scroll-top
+		margin-left: 570px
+
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1199px)
+	.scroll-top
+		margin-left: 480px
 	/**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
+	.p-reviews-slider
+		margin-left: 0
+		margin-right: 0
+	.logo
+		width: 33%
+	.header__info
+		font-size: 14px
+		width: 47%
+		text-align: center
+	.social
+		width: 20%
+		text-align: right
+	.promo
+		width: 50%
+		max-width: none
+	.scroll-top
+		margin-left: 360px
+	.nav-menu__mob
+		background-image: url(../images/mob-menu.png)
+		background-repeat: no-repeat
+		background-position: center center
+		width: 20px
+		height: 18px
+		background-size: cover
+		display: block
+		margin: 15px
+	.nav-menu
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		background-color: #173d73
+		z-index: 10
+		display: none
+	.row
+		position: relative
+	.nav-menu li:before,
+	.nav-menu li:after
+		display: none
+	.nav-menu li
+		width: 100%
+		float: none
+		display: block
+	.nav-menu a
+		padding: 10px 15px
+	.nav-submenu
+		display: none
+		position: static
+	.nav-submenu__link
+		padding: 10px 15px !important
+	.nav-menu a i
+		display: none !important
+	.p-advantages
+		-ms-flex-wrap: wrap
+		-webkit-flex-wrap: wrap
+		flex-wrap: wrap
+	.p-advantages__item
+		width: 25%
+		margin-bottom: 15px
+	.p-advantages
+		padding-bottom: 30px
+	.p-shares
+		-ms-flex-wrap: wrap
+		-webkit-flex-wrap: wrap
+		flex-wrap: wrap
+		margin: 0
+		justify-content: center
+	.p-shares__item
+		width: 50%
+		margin: 0
+	.p-more__wp
+		padding-bottom: 35px
+	.p-reviews__description
+		height: 74px
+	.p-reviews__title
+		height: 36px
+	.index-content-flex
+		-ms-flex-wrap: wrap
+		-webkit-flex-wrap: wrap
+		flex-wrap: wrap
+
+	.index-content-left,
+	.index-content-right
+		padding-right: 0
+		width: 50%
+		padding-bottom: 30px
+	.index-content-center
+		order: -1
+		padding-right: 0
+		width: 100%
+		padding-bottom: 30px
+	.p-recommend-slider
+		margin-bottom: 30px
+	
+
+	.f-services
+		width: 50%
+	.f-copy
+		width: 100%
+		text-align: center
+	.f-social
+		width: 100%
+		text-align: center
+		padding-bottom: 13px
+
 	/**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
+	.index-content-left,
+		width: 40%
+	.index-content-right
+		width: 60%
 	/**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
+@media only screen and (max-width : 575px)
+	.item-block
+		padding-left: 15px
+		padding-right: 15px
+	.justify-content-between
+		display: block !important
+	.logo
+		width: 100%
+		text-align: center
+	.header__info
+		font-size: 12px
+		text-align: center
+		width: 100%
+		max-width: none
+	.social
+		width: 100%
+		text-align: center
+	.promo
+		width: 100%
+		margin-bottom: 15px
+	.phone__item
+		width: 204px
+		margin: 0 auto 10px
+	.search
+		float: left
+	.nav
+		padding: 15px
+	.nav-menu__mob
+		float: right
+		margin: 6px 0 0
+
+	.nav .row:before
+		content: ''
+		display: table
+	.nav .row:after
+		content: ''
+		display: table
+		clear: both
+	.index-content__title
+		font-size: 24px
+		padding-bottom: 15px
+	.p-advantages__item
+		width: 50%
+	.p-advantages
+		padding-bottom: 15px
+	.p-shares__item
+		width: 100%
+	.p-shares
+		display: block
+	.p-reviews__left
+		display: none
+	.p-reviews__item
+		padding: 15px
+	.index-content-left
+		width: 100%
+		padding-right: 0
+	.index-content-right
+		padding-left: 0
+		width: 100%
+	.index-content-flex
+		display: block
+	.f-services
+		width: 100%
+		padding-right: 0 !important
+	.f-services__notitle
+		padding-top: 0
+	.f-services__title
+		padding-bottom: 15px
+		padding-top: 15px
+	.footer__top
+		padding-top: 15px
+		padding-bottom: 15px
+	.f-services
+		padding-bottom: 15px
 	/**/
 
 
@@ -46,6 +265,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
+	.nav-menu__mob
+		display: none
 	/**/
 
 

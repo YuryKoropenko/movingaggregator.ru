@@ -16,6 +16,7 @@
 
 <!-- Styles -->
 <link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 <link rel="stylesheet" href="css/main-head.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/media.css">
@@ -47,12 +48,13 @@
 										<div class="phone__title">Ежедневно без выходных</div>
 										<div class="phone__number"> +7 985 807 36 79</div>
 									</div>
-								</div><a class="btn btn--red btn--full" href="#">Заявка на переезд</a>
+								</div><a class="btn btn--red btn--full fb-button" href="#callbackform">Заявка на переезд</a>
 							</div>
 						</header>
 					</div>
 					<nav class="nav item-block">
 						<div class="row no-gutters justify-content-between align-items-center">
+							<a href="#" class="nav-menu__mob"></a>
 							<ul class="nav-menu clearfix">
 								<li><a href="#"><i></i>Компания</a>
 									<ul class="nav-submenu">
@@ -96,11 +98,9 @@
 							</div>
 						</div>
 					</nav>
-					<div class="slider">
-						<div class="slider__item">
-							<div class="slider__img"><img src="images/slide.jpg" alt=""></div>
-						</div>
-					</div>
+					<!--
+						Сюда поставить компонент старого слайдера с сайта http://movingaggregator.ru/
+				-->
 				</div>
 			</div>
 			<div class="row">
@@ -602,7 +602,7 @@
 											<div class="phone__descr d-table-cell">
 												<div class="phone__number"> +7 985 807 36 79</div>
 											</div>
-										</div><a class="btn btn--red btn--full" href="#">Заявка на переезд</a>
+										</div><a class="btn btn--red btn--full fb-button" href="#callbackform">Заявка на переезд</a>
 									</div>
 								</div>
 							</div>
@@ -630,11 +630,53 @@
 		</footer>
 	</div>
 	<a href="#" class="scroll-top"></a>
+
+	<div class="p-form" id="callbackform" style="display: none;">
+		<div class="p-form__wrapper">
+			<b class="p-form__title">
+				Заявка на переезд
+			</b>
+			<div class="p-form__row">
+				<label for="">
+					ФИО
+				</label>
+				<input type="text" placeholder="Представтесь пожалуйста">
+			</div>
+			<div class="p-form__row">
+				<label for="">
+					Телефон
+				</label>
+				<input type="tel">
+			</div>
+			<div class="p-form__row">
+				<label for="">
+					Email
+				</label>
+				<input type="email" placeholder="Электронный адрес">
+			</div>
+			<div class="p-form__row">
+				<label for="">
+					Сообщение
+				</label>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+			</div>
+			<div class="p-form__bottom">
+				<span class="p-form__warning">
+					Внимание! Все поля обязательны для заполнения
+					<span>Заполняя данную форму Вы выражаете свое согласие на обработку персональных данных в соответствии с Положением об обработке персональных данных.</span>
+				</span>
+				<div class="p-form__button-wp">
+					<input type="submit" class="p-form__button">
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/vendor.js"></script>
 	<script src="libs/main.js"></script>
 	<script src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
 	<!-- End_Scripts -->
 	

@@ -187,6 +187,9 @@
     text-align: center;
     padding-bottom: 13px;
   }
+  .p-form {
+    width: 80%;
+  }
   /**/
 }
 
@@ -198,11 +201,30 @@
   .index-content-right {
     width: 60%;
   }
+  .p-form__warning {
+    width: 100%;
+    text-align: center;
+  }
+  .p-form__button-wp {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .p-form__bottom {
+    display: block;
+    width: 100%;
+  }
   /**/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
+  .p-form__wrapper {
+    padding: 30px 15px;
+  }
+  .p-form__title {
+    padding-bottom: 15px;
+  }
   .item-block {
     padding-left: 15px;
     padding-right: 15px;

@@ -4,6 +4,24 @@
   position: relative;
 }
 
+.header {
+  position: relative;
+}
+
+.header__lang {
+  width: 30px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  display: block;
+  background-color: #1a478a;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
 .item-block {
   width: 100%;
 }

@@ -1,6 +1,6 @@
 /**
  * Video Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Bartosz Wojciechowski
  * @author David Deutsch
  * @license The MIT License (MIT)

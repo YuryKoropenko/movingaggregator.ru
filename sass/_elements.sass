@@ -3,6 +3,9 @@
 
 /*Компоненты*/
 
+.wrapper
+	position: relative
+
 .item-block
 	width: 100%
 .index-content
@@ -225,6 +228,8 @@
 		-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
 		box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
 		margin: 5px;
+	&__link
+		display: block
 		img
 			display: block
 			width: 100%
@@ -277,12 +282,22 @@
 	color: #333
 	font-size: 16px
 	line-height: 24px
+	h2
+		color: #295390
+		font-size: 20px
+		font-weight: 600
+		padding-bottom: 20px
+		display: block
 	p
 		font-weight: normal
-	strong
+	strong, h3, h4, b
 		font-weight: bold
 	ol
 		li
+			padding-bottom: 24px
+			display: block
+			&:last-child
+				padding-bottom: 0
 	&__more
 		font-size: 14px
 		color: #295390
@@ -435,6 +450,8 @@
 		border-bottom: 2px solid #e8ecf3
 		display: block
 		min-width: 140px
+		float: none
+		width: 100%
 		&:first-child
 			border-top: 2px solid #e8ecf3
 		&::before
@@ -448,6 +465,8 @@
 		text-decoration: none !important
 		display: block !important
 		padding: 17px 10px 16px !important
+		white-space: nowrap;
+		min-width: 140px;
 
 .scroll-top
 	width: 30px
@@ -552,3 +571,174 @@
 		right: -36px
 		&::after
 			display: none
+
+.p-banner
+	&__left
+		position: absolute
+		left: 0
+		right: 0
+		display: block
+		width: 50%
+		padding-right: 638px
+		img
+			width: 100%
+	&__right
+		position: absolute
+		right: 0
+		top: 0
+		display: block
+		width: 50%
+		padding-left: 638px
+		img
+			width: 100%
+
+.index-slider
+	&__wp
+		position: relative
+		background-color: #1a478a
+	&__item
+		@include clearfix
+		position: relative
+		overflow: hidden
+		padding-bottom: 64px
+	&__left
+		width: 50%
+		float: left
+		background-color: #1a478a
+		padding-left: 95px
+		padding-top: 56px
+		padding-bottom: 107px
+		position: relative
+		&::after
+			content: ''
+			width: 0
+			height: 0
+			border-top: 455px solid #1a478a
+			border-right: 117px inset transparent
+			position: absolute
+			right: -117px
+			top: 0
+		span
+			font-size: 18px
+			color: #fff
+			display: block
+			padding-bottom: 18px
+		h2
+			font-size: 36px
+			font-weight: bold
+			color: #fff
+			display: block
+			line-height: 36px
+			padding-bottom: 10px
+		blockquote
+			font-size: 15px
+			color: #fff
+			padding: 6px
+			display: inline-block
+			background-color: #002b6a
+			border-radius: 4px
+			margin-bottom: 18px
+	&__button
+		display: block
+		width: 144px
+		text-align: center
+		height: 36px
+		line-height: 34px
+		font-size: 17px
+		font-weight: bold
+		color: #fff
+		text-transform: uppercase
+		border: 1px solid #e10919
+		background-color: #e10919
+		border-radius: 4px
+		&:hover
+			background-color: transparent
+			color: #e10919
+	&__prem
+		color: #91b0de !important
+		font-size: 12px !important
+		position: absolute
+		left: 95px
+		bottom: 12px
+		padding-bottom: 0 !important
+	&__right
+		width: 50%
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		text-align: right
+		z-index: -1
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			display: inline-block
+			height: none !important
+			width: auto !important
+			min-width: none
+			min-height: 100%
+			max-width: none !important
+
+
+.content
+	position: relative
+	z-index: 2
+
+.item-block-nw
+	width: 100%
+	padding-bottom: 60px
+
+.p-thumbs
+	background-color: #fff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	padding: 8px 0
+	-ms-flex-wrap: wrap
+	-webkit-flex-wrap: wrap
+	flex-wrap: wrap
+	&__wrapper
+		padding-left: 95px
+		padding-right: 95px
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 20
+	&__item
+		cursor: pointer
+		width: 25%
+		text-align: center
+		border-right: 1px solid #dbdbdb
+	.active
+		.p-thumbs__text
+			height: 48px
+			display: inline-block
+			line-height: 46px
+			background-color: #fc0
+			border-radius: 4px
+			padding: 0 26px
+			border-top: 2px solid #c49d00
+			color: #83753b
+		&:last-child
+			border-right: none
+	&__text
+		height: 48px
+		display: inline-block
+		line-height: 46px
+		background-color: transparent
+		color: #1a478a
+		border-radius: 4px
+		padding: 0 26px
+		border-top: 2px solid transparent
+		font-size: 20px
+	.p-thumbs__item:last-child
+		border: none

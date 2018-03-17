@@ -1,4 +1,11 @@
 $(document).ready(function() {
+	$('.index-slider').owlCarousel({
+		items: 1,
+		loop: true,
+		dots: true,
+		dotsContainer: '.p-thumbs'
+	});
+
 	$('.p-reviews-slider').owlCarousel({
 		nav:true,
 		responsive:{
@@ -27,6 +34,7 @@ $(document).ready(function() {
 	});
 
 	$('.fb-button').fancybox();
+	$('.p-recommend__link').fancybox();
 
 	$('.p-indexdes__more').on('click', function() {
 		$(this).parent().children('.p-indexdes__more-block').slideToggle(400);
@@ -52,7 +60,12 @@ $(document).ready(function() {
 			return false;
 		});
 	}
-
+/*
+	$('.p-thumbs__item').on('click', function() {
+		$('.p-thumbs__item').removeClass('active');
+		$(this).addClass('active');
+	});
+*/
 	
 
 	$(window).scroll(function() {
